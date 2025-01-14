@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Import Accounts</title>
+</head>
+<body>
+    <h1>Import Accounts from CSV</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="file" required>
+        <button type="submit">Import</button>
+    </form>
+</body>
+</html>
